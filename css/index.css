@@ -51,6 +51,7 @@ body {
 .logo h4 {
     font-family: 'Bodoni Moda', serif;
     color: aliceblue;
+    width: fit-content;
 }
 
 .logo h1 {
@@ -228,15 +229,17 @@ body {
 }
 .editBtn:hover {
     cursor: pointer;
+    background-color: tomato;
 }
 
 /* Trash Icon */
 .fa {
+    color: #0f3057;
     font-size: 10px;
 }
 .fa:hover {
-    cursor: pointer;
-    color: #0f3057;
+    color: tomato;
+    font-size: 5vw;
 }
 
 /* Detail Page */
