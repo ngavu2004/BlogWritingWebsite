@@ -1,0 +1,54 @@
+<!-- 
+    Trang 1: trang chủ dùng để đẩy lên những câu chuyện mới nhất <--
+    Trang 2: trang profile
+    Trang 3: trang chỉnh sửa
+    Webpage: https://ngavu2004.github.io/FinalProject/
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>DRAFT</title>
+     <link rel="stylesheet" href="css/index.css">
+     <script src="jquery-3.5.1.min.js"></script>
+     <script src="js/draft.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+ </head>
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bodoni+Moda&family=Lobster&display=swap" rel="stylesheet">
+ <body onload="redirect('load')">
+     <div class="nav">
+         <div class="nav-e" onclick="redirect('home')">Home</div>
+         <div class="nav-e" id="create" onclick="redirect('write')">New stories</div>
+         <div class="nav-e" onclick="redirect('read')">Discover</div>
+         <div class="nav-e" onclick="profile()" id="profile">Login</div>
+     </div>
+     
+     <div id="wrap">
+         <div class="logo" id="logo">
+             <div><h3>Since 2021</h3></div>
+             <div><h1>JANUAL</h1></div>
+             <div><h4>===Passion || Love || Adventures===</h4></div>
+         </div>
+         <div id="display" class="display">
+ 
+         </div>
+         <div id="detail" class="detail">
+ 
+         </div>
+     </div>
+     
+ 
+     <div class="write" id="write">
+         <h1 contenteditable="true" id="title">Input yout title</h1>
+         <div><p class="newStories" id="content" contenteditable="true"></p></div>
+         <div id="saveBtn" onclick="redirect('save')">Save</div>
+     </div>
+ 
+     
+ </body>
+ </html>

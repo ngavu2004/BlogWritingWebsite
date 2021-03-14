@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script>
+</head>
+<style>
+    body {
+        background: linear-gradient(rgba(86, 77, 74, 0.4), rgba(86, 77, 74, 0.4)), url(image/mainBg.jpeg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .signUp {
+        visibility: hidden;
+    }
+    .signIn, .signUp {
+        background-color: rgba(231, 231, 222, 0.6);
+        border-radius: 10%;
+        width: 50%;
+        height: 50vh;
+        position: absolute;
+        top: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;   
+    }
+    .signUp, .signIn {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .signUp .item, .signIn .item {
+        margin: 10px;
+    }
+
+    #direct1 span:hover, #direct2 span:hover, #direct span:hover {
+        cursor: pointer;
+    }
+
+</style>
+<body>
+    <div class="root">
+        <div class="signUp" id="signUp">
+            <div><h1 style="color: #00587a;">Sign Up</h1></div>
+            <div><input type="text" class='item' id='username' placeholder="Username"></div>
+            <div><input type="password" class='item' id='pass' placeholder="Password"></div>
+            <div><input type="text" class='item' id='email' placeholder="Email"></div>
+            <div><button id='btn' onclick="signUp()">Sign Up</button></div>
+            <p id="direct" onclick="direct('signin')">Already have an account?<span style="color: blue;">Sign In!</span></p>
+            <p id="message"></p>
+        </div>
+
+        <div class="signIn" id="signIn">
+            <div><h1>Sign In</h1></div>
+            <div><input type="text" class='item' id='name' placeholder="Username"></div>
+            <div><input type="password" class='item' id='password' placeholder="Password"></div>
+            <div><button id='signin' onclick="signIn()">Sign In</button></div>
+            <p id="direct1" onclick="direct('signup')">Don't have an account?<span style="color: blue;">Sign Up!</span></p>
+            <p id="direct2" onclick="homepage()">Don't want to sign in?<span style="color: blue;">Go to homepage!</span></p>
+            <p id="logInMessage"></p>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

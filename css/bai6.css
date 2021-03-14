@@ -1,0 +1,126 @@
+/* Color palette:
+  purple: #5B2333;
+  white: #F7F4F3;
+  gray: #564D4A;
+  red-pink: #F24333;
+  red: #BA1B1D;
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(rgba(86, 77, 74, 0.4), rgba(86, 77, 74, 0.4)), url(fashion.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Heading */
+.welcome {
+  background-color: #564d4ae6;
+  position: relative;
+  margin: auto;
+  padding: 10%;
+  padding-top: 5%;
+  color: aliceblue;
+}
+
+
+
+.welcome h1 {
+  position: relative;
+  font-family: 'Anton', sans-serif;
+  color: #BA1B1D;
+  font-size: 800%;
+}
+
+.welcome h3 {
+  position: relative;
+  top: 0px;
+  font-family:'PT Serif', serif;
+  font-size: 25px;
+}
+
+.welcome .btn-container {
+  width: 30%;
+  margin-top: 1%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-container div {
+  background-color: #BA1B1D;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  border: solid 1px white;
+  padding: 5%;
+}
+
+.btn-container div:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+  /* Navigation bar */
+.nav {
+  text-align: center;
+  height: 10%;
+  background-color: #BA1B1D;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  justify-content: space-around;
+}
+
+.nav .nav-e {
+  font-family: 'PT Serif', serif;
+  margin: 0;
+  width: 25%;
+  font-size: 150%;
+  color: aliceblue;
+  padding: 15px;
+  
+}
+
+.nav-e:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* About me */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  justify-content: space-around;
+}
+
+.about div {
+  margin: 1%;
+  font-size: 20px;
+  padding: 20px;
+  width: 30%;
+  background-color: #F7F4F3;
+}
+
+.about .text-block {
+  width: fit-content;
+}
+
+.about img {
+  position: relative;
+  width: 70%;
+  left: 15%;
+}
+
