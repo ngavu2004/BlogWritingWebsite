@@ -108,7 +108,7 @@ body {
 
 #title {
     background-color: rgba(231, 231, 222, 0.0);
-    color: #A6C1AC;
+    color: black;
     padding: 5px;
     padding-right: 20px;
     margin-left: 0;
@@ -190,7 +190,7 @@ body {
 
 /* Discover Composition */
 .storyCompo {
-    background-color: #A6C1AC;
+    background-color: white;
     width: 30vh;
     height: fit-content;
     max-height: 50vh;
@@ -291,4 +291,5 @@ body {
     position: absolute;
     top: 50;
     right: 0;
-    background-color: alicebl
+    background-color: aliceblue;
+}
